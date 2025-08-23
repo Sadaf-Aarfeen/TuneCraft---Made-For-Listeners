@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuneCraft - Made for Listeners</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="same-cont">
+          <div class="left-cont">
+            <div class="fst-line">
+              <div class="logo">
+                <img class="webLogo" src="raw/TuneCraftLogo.png" />
+                <a href="index.html" class="webName">TuneCraft</a>
+              </div>
+              <div class="close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="cont1">
+              <i class="fa-solid fa-address-card"></i>
+              <span class="abt">About</span>
+              <div class="info"><p></p><strong>TuneCraft</strong> is a lightweight, web-based music player made
+              for listeners who love simplicity and good vibes. With curated playlists 
+              TuneCraft brings you music that fits every mood.<br>
+              Our player is designed to be clean, responsive, and easy to use.</p></div>
+            </div>
+          </div>
+          <div class="library">
+            <div class="lib-cont">
+              <i class="fa-solid fa-book"></i>
+              <span>Your Library</span>
+            </div>
+            <div class="songList">
+              <ul></ul>
+            </div>
+            <div class="footer">
+              <div>&copy 2025 TuneCraft - Made for Listeners.</div>
+              <div>All rights reserved.</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-cont">
+          <nav>
+            <div class="arrows">
+              <i class="fa-solid fa-bars hamburger"></i>
+            </div>
+            <div class="buttons">
+              <button class="but"><i class="fa-solid fa-moon theme-icn"></i>Dark Mode</button>
+            </div>
+          </nav>
+          <div class="playlist">
+            <div class="txt">TuneCraft Playlists</div>
+            <div class="cards">
+              <div class="cd" data-playlist="happyHits">
+                <img src="raw/happy.jpg" />
+                <div class="play">
+                  <h2>Happy Hits</h2>
+                  <i class="fa-solid fa-circle-play playlistPlay"></i>
+                </div>
+                <p>Feel-good vibes and happy rhythms.</p>
+              </div>
+              <div class="cd" data-playlist="retroVibes">
+                <img src="raw/retro.jpg" />
+                <div class="play">
+                  <h2>Retro Vibes</h2>
+                  <i class="fa-solid fa-circle-play playlistPlay"></i>
+                </div>
+                <p>Timeless classics that never fade.</p>
+              </div>
+              <div class="cd" data-playlist="chillBeats">
+                <img src="raw/chill.jpg" />
+                <div class="play">
+                  <h2>Chill Beats</h2>
+                  <i class="fa-solid fa-circle-play playlistPlay"></i>
+                </div>
+                <p>Relax, unwind, and let the music flow.</p>
+              </div>
+              <div class="cd" data-playlist="fitBeats">
+                <img src="raw/fit.avif" />
+                <div class="play">
+                  <h2>Fit Beats</h2>
+                  <i class="fa-solid fa-circle-play playlistPlay"></i>
+                </div>
+                <p>Push harder with high-octane tracks.</p>
+              </div>
+              <div class="cd" data-playlist="nightDrive">
+                <img src="raw/night.webp" />
+                <div class="play">
+                  <h2>Night Drive</h2>
+                  <i class="fa-solid fa-circle-play playlistPlay"></i>
+                </div>
+                <p>Perfect beats for late-night journeys.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="playbar">
+              <div class="displaySong"></div>
+              <div class="icons">
+                <i class="fa-solid fa-backward pp previous"></i>
+                 <i class="fa-solid fa-play pp playbr"></i>
+                <i class="fa-solid fa-forward pp next"></i>
+              </div>
+              <div class="displayDuration"></div>
+              <div class="volume"></div>
+            </div>
+            <input type="range" class="seekbar" min="0" value="0" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,471 @@
+* {
+    padding: 0;
+    margin: 0;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  transition: all 0.5s ease;
+}
+.container {
+    display: flex;
+}
+.fst-line {
+    display: flex;
+    justify-content: space-between;
+}
+.close {
+    padding-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+.logo {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.webName {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 68px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.webLogo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 15px;
+}
+.left-cont {
+    margin: 1.5vh;
+    padding: 0vw 20px;
+    background-color: rgb(23, 23, 23);
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 25vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.5s ease;
+}
+.cont1 {
+    margin: 12px 0px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.info {
+    width: 70%;
+    height: auto;
+    margin: 12px 8px;
+    padding: 12px;
+    font-size: 10px;
+    font-weight: 100;
+    position: absolute;
+    top: -40px;
+    opacity: 0;
+    background-color: rgba(254, 12, 133, 0.8);
+    border: 1px solid rgb(74, 70, 70);
+    border-radius: 12px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+.abt:hover +.info {
+        opacity: 1;
+}
+
+.library {
+    height: 70.5vh;
+    color: white;
+    margin: 1.5vh;
+    background-color: rgb(23, 23, 23);
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 30vw;
+    transition: all 0.5s ease;
+}
+.lib-cont {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0.8vw 2vw;
+}
+.lib-cont span {
+    padding-left: 5px;
+}
+.songList {
+    padding: 1vw;
+    font-size: 14px;
+    font-weight: 100;
+    max-height: 45vh;   
+    overflow: auto;  
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(23,23,23) #242424;
+}
+.songList ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    text-transform: capitalize;
+   
+}
+.songList ul li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(125, 110, 110);
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+}
+.sName {
+    padding: 0px 10px;
+}
+.footer {
+    width: 100%;
+    font-size: 9px;
+    color: rgb(138, 137, 135);
+    position: absolute;
+    padding: 0 2vw;
+    bottom: 3vh;
+}
+.same-cont {
+    position: relative; 
+}
+
+.right-cont {
+    width: 70vw;
+    height: 97vh;
+    margin: 1.5vh;
+    background-color: rgb(23, 23, 23);
+    border-radius: 6px;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.5s ease;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.hamburger {
+    display: none !important;
+    height: 20px;
+    width: 20px;
+    color: rgb(215, 212, 212);
+    cursor: pointer;
+    
+}
+.arrows {
+    display: flex;
+    gap: 1.5vw;
+    padding-left: 2vw;
+}
+.arr {
+    color: rgb(215, 212, 212);
+    padding: 3px;
+    font-size: small;
+}
+.buttons {
+    padding-right: 2vw;
+}
+.but {
+    padding: 6px;
+    background-color: #2a2727;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border: 1px solid rgb(117, 114, 114);
+    transition: all 0.1s ease;
+}
+.but:hover {
+    transform: scale(1.08);
+    background-color: #3b3a3a;
+}
+.theme-icn {
+    margin-right: 5px;
+    font-size: medium;
+}
+.playlist {
+    height: 67vh;
+    background-color: rgb(23,23,23);
+    margin-top: 3vh;
+    position: absolute;
+    padding: 0px 2vw;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(23,23,23) #242424;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+}
+.txt {
+    color: white;
+    font-size: 30px;
+}
+.cards {
+    display: flex;
+    margin: 2vh 0;
+    gap: 0.7vw;
+    flex-wrap: wrap;
+}
+.cd {
+    width: 150px;
+    height: 200px;
+    background-color: #242424;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+.cd:hover {
+    transform: scale(1.05);
+    background-color: rgba(59, 22, 36, 0.048);
+    .playlistPlay {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+.cd img {
+    width: 100%;
+    height: 68%;
+    position: relative;
+}
+.cd p {
+    color: rgb(198, 202, 206);
+    font-weight: lighter;
+    font-size: 10px;
+}
+.play {
+    display: flex;
+    justify-content: space-between;
+}
+.play h2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 0px;
+}
+.playlistPlay {
+    position: absolute;
+    font-size: small;
+    right: 5px;
+    margin: 8px 4px;
+    cursor: pointer;
+    color: rgb(254, 12, 133);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.ps {
+    font-size: large;
+}
+.bar {
+    min-height: 55px;
+    width: 98%;  
+    background-color: #242424;
+    border-radius: 22px;
+    position: absolute;
+    bottom: 5vh;           
+    left: 1%;
+    border: 1px solid rgb(125, 110, 110);
+    transition: all 0.5s ease;
+}
+.playbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8px;
+}
+.icons {
+    display: flex;
+    gap: 20px;
+}
+.pp {
+    color: white;
+    cursor: pointer;
+}
+.seekbar {
+    height: 4px;
+    width: 97%;
+    position: absolute;
+    left: 1%;
+    bottom: 0px;
+    cursor: pointer;
+}
+.displaySong {
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+}
+.displayDuration {
+    color: white;
+    font-size: 10px;
+    
+}
+.volume {
+    color: white;
+    cursor: pointer;
+}
+.songList ul li {
+    transition: all 0.3s ease;
+}
+.songList ul li:hover {
+    transform: scale(1.05);
+    background-color: #242424;
+}
+@media (max-width:910px) {
+    .same-cont {
+        width: 280px;
+        position: absolute;
+        left: -110%;
+        transition: all 0.3s;
+        z-index: 1;
+        background-color: black;
+    }
+    .library {
+        width: 265px;
+    }
+    .left-cont {
+        width: 265px;
+    }
+    .right-cont {
+        width: 100%;
+    }
+    .close {
+        display: block;
+    }
+    .hamburger {
+        display: block !important;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .txt {
+        justify-self: center;
+    }
+   
+} 
+
+@media (max-width:600px) {
+    .cd {
+        width: 41%;
+        height: auto;
+    }
+    .cards {
+        gap: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .cd {
+        width: 100%;
+        height: auto;
+    }
+    .cards {
+        gap: 12px;
+    }
+    .icons {
+        font-size: 10px;
+    }
+    .playbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .bar {
+        border-radius: 0%;
+    }
+    .volume {
+        font-size: 10px;
+    }
+    .playlistPlay {
+        right: 16px;
+        margin-top: 12px;
+    }
+    .play h2 {
+        font-size: 22px;
+    }
+    .cd p {
+        font-size: 14px;
+    }
+}
+
+
+/* Light Theme (active only if .light-theme is on <body>) */
+
+body.light-theme {
+    background-color: #fff5f8;   
+}
+body.light-theme nav,
+body.light-theme .left-cont,
+body.light-theme .library {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+}
+body.light-theme .right-cont,
+body.light-theme .playlist {
+    background-color: #fff5f8;
+}
+body.light-theme nav {
+    background-color: #fff;
+    color: black;
+}
+body.light-theme .cd {
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+}
+body.light-theme .cd:hover {
+    background-color: #fff5f8;
+}
+body.light-theme .cd p {
+    color: black;
+}
+body.light-theme .webName {
+    color: black;
+}
+body.light-theme .songList ul li:hover {
+    background-color: #fff5f8;
+}
+body.light-theme .bar {
+    background-color: #fff;
+    color: black;
+}
+body.light-theme .pp,
+body.light-theme .displayDuration,
+body.light-theme .displaySong,
+body.light-theme .volume,
+body.light-theme .txt {
+    color: black;
+}
+body.light-theme .txt {
+    color: black;
+}
+body.light-theme .but {
+    background-color: #fff5f8;
+    color: black;
+    border: 1px solid rgb(86, 83, 83);
+}
+body.light-theme .info {
+    background-color: rgb(255, 105, 180);
+}
+body.light-theme .hamburger {
+    color: black;
+}
+body.light-theme .playlist,
+body.light-theme .songList {
+    scrollbar-color: #ffffff #ffe5ef;
+}
