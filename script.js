@@ -22,20 +22,11 @@ async function loadPlaylist(folderName) {
     sList.innerHTML = "";
 
     //fetching songs from a particular folder
-    let a = await fetch(`http://127.0.0.1:5500/songs/${folderName}/`);
-    let res = await a.text();
+    let a = await fetch(`./songs/${folderName}/songs.json`);  
+    let data = await a.json();
 
-    let fres = new DOMParser();
-    let response = fres.parseFromString(res, "text/html");
-    let as = response.getElementsByTagName("a");
-
-    // store full song URLs
-    for (let idx = 0; idx < as.length; idx++) {
-        const ele = as[idx];
-        if (ele.href.endsWith(".mp3")) {
-            songs.push(ele.href);
-        }
-    }
+    // build full URLs
+    songs = data.songs.map(song => `./songs/${folderName}/${song}`); 
     //creating songlist and managing play and pause
     
     songs.forEach(songUrl => {
@@ -231,3 +222,4 @@ themeButton.addEventListener("click", () => {
     document.body.classList.toggle("light-theme");
 
 })
+
