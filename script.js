@@ -22,7 +22,7 @@ async function loadPlaylist(folderName) {
     sList.innerHTML = "";
 
     //fetching songs from a particular folder
-let a = await fetch(`TuneCraft---Made-For-Listeners/songs/${folderName}/songs.json`);
+let a = await fetch(`/TuneCraft---Made-For-Listeners/songs/${folderName}/songs.json`);
 
     let res = await a.text();
 
@@ -232,6 +232,7 @@ themeButton.addEventListener("click", () => {
     document.body.classList.toggle("light-theme");
 
 })
+
 
 
 
